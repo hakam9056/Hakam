@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #555;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    color: rgb(8, 6, 6);
+
+    justify-content: center;
+    align-items:normal;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.hero h3 {
+    font-size: 2rem;
+}
+.container {
+    padding: 1rem;
+}
+.condo-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.condo {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.condo img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #555;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

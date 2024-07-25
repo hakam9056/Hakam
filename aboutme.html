@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Me - Learn more about the creator of Condo Listings.">
+    <title>About Me - Condo Listings</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .about-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 1rem auto;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact-form label {
+            margin: 0.5rem 0 0.2rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 0.7rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Me</h1>
+</header>
+<div class="about-container">
+    <img src="images/Hakam Singh.jpeg" alt="Your Name" width="250" height="150">
+    <h2>Hello, I'm Hakam Singh</h2>
+    <p>Welcome to my website! I am the creator of Condo Listings. My passion for web development and real estate inspired me to build this platform.</p>
+    
+    <h3>Background</h3>
+    <p>I hold a degree in Computer Science from Northern college. Additionally, I have completed several web development courses, including HTML, CSS, JavaScript, and various frameworks and libraries.</p>
+    
+    <h3>Skills</h3>
+    <p>Over the years, I have honed my skills in web development. Here are some of the key areas I specialize in:</p>
+    <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript & jQuery</li>
+        <li>Responsive Design</li>
+        <li>Web Performance Optimization</li>
+        <li>Version Control with Git</li>
+        <li>Backend Development (Node.js, Express)</li>
+    </ul>
+    
+    <h3>Projects</h3>
+    <p>Here are some of the projects I have worked on:</p>
+    <ul>
+        <li><a href="https://github.com/yourusername/project1">Project 1</a> - A web application for managing real estate listings.</li>
+        <li><a href="https://github.com/yourusername/project2">Project 2</a> - An e-commerce site built with React and Node.js.</li>
+        <li><a href="https://github.com/yourusername/project3">Project 3</a> - A personal portfolio website showcasing my work.</li>
+    </ul>
+
+    <h3>Contact Information</h3>
+    <p>If you'd like to get in touch with me, please fill out the form below:</p>
+    <form class="contact-form" action="contact.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    &copy; 2024 Condo Listings. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Condo Listings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+            padding: 1rem;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1618324472848-07c2f37c956e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            flex-direction: column;
+            padding: 0 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background-color: #ff5a5f;
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #e04e4e;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+        }
+        footer .social-icons {
+            margin: 1rem 0;
+        }
+        footer .social-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #ff5a5f;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+        #back-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Condo Listings</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="listing.html">Listings</a>
+    <a href="">Contact</a>
+    <a href="aboutme.html">About me</a>
+    <a href="create.php">Register</a>
+    <a href="Read.php">Requests</a>
+</nav>
+
+<section class="hero">
+    <div>
+        <h1>Get in Touch with Us</h1>
+    </div>
+</section>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to schedule a viewing, please fill out the form below. We are here to assist you!</p>
+    
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    &copy; 2024 Condo Listings. All rights reserved.
+</footer>
+
+<button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+<script>
+    window.onscroll = function() {
+        var button = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    };
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<!-- Font Awesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
